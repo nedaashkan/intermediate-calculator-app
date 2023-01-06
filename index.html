@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row gx-1" id="input-box-row">
+        <div class="col-12">
+          <input type="text" class="w-100" id="input-el" readonly />
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(7)">7</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(8)">8</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(9)">9</button>
+        </div>
+        <div class="col-3">
+          <button class="pink-btn py-3 w-100" onclick="operations('-')">
+            -
+          </button>
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(4)">4</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(5)">5</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(6)">6</button>
+        </div>
+        <div class="col-3">
+          <button class="pink-btn py-3 w-100" onclick="operations('+')">
+            +
+          </button>
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(1)">1</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(2)">2</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers(3)">3</button>
+        </div>
+        <div class="col-3">
+          <button class="pink-btn py-3 w-100" onclick="operations('*')">
+            x
+          </button>
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-6">
+          <button class="white-btn py-3 w-100" onclick="numbers(0)">0</button>
+        </div>
+        <div class="col-3">
+          <button class="white-btn py-3 w-100" onclick="numbers('.')">.</button>
+        </div>
+        <div class="col-3">
+          <button class="pink-btn py-3 w-100" onclick="operations('/')">
+            ÷
+          </button>
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-6">
+          <button class="pink-btn py-3 w-100" onclick="equal()">=</button>
+        </div>
+        <div class="col-6">
+          <button
+            class="pink-btn py-3 w-100"
+            id="delete-btn"
+            onclick="Delete()"
+          >
+            delete
+          </button>
+        </div>
+      </div>
+      <div class="row gx-1 gx-lg-2 mt-2">
+        <div class="col-12">
+          <button
+            class="pink-btn py-3 w-100"
+            id="restart-btn"
+            onclick="reStart()"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
